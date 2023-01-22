@@ -1,0 +1,275 @@
+			
+*{margin: 0;padding: 0;
+box-sizing: border-box;
+}
+
+a{text-decoration: none;
+color: blue;
+font-weight: 700;}
+
+/*-----------------Header Bar------------------------*/
+.navbar ul{
+		display: flex;
+		width: 100%;
+		align-items: center;
+		background-color: #4E6E5B;
+		padding-right: 12vw;
+		
+	}
+
+.navbar li{
+		list-style-type: none;
+		padding: 1rem;
+
+
+
+
+
+	}
+
+.navbar a{
+		text-decoration: none;
+		color: #F2EECB;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+.navbar-logo {
+	 	flex: 1;
+	 	user-select: none;
+	}
+
+.navbar-toggler {
+		display: none;
+	}
+
+.navbar-links{transition: all 400ms ease-in-out;}
+
+.navbar-links:hover{
+
+		background-color: #f3f1ca;
+		border-radius: 5px;
+		font-size: 1.05em;
+		box-shadow: 8px 5px 8px #000		
+	}
+
+.navbar-links:hover a{
+		color: black;}
+
+
+nav img {width:16vw;
+		border: 2px solid black;
+		background-color: #f3f1ca;
+		max-height: 100px;
+		border-radius: 20px;
+		padding: 5px;
+		margin-left: 12vw;
+		transition: all 400ms ease-in-out;
+	}
+nav img:hover{box-shadow: 8px 5px 8px #000;
+
+}
+
+h1, h2, h3{
+		padding-bottom: .5em;
+		padding-top: .5em;
+
+	}
+
+.GridContainer{
+		border: 1em solid #4E6E5B;
+		background:linear-gradient(rgba(242, 238, 203,0.7),
+			rgba(242,238,203,0.8)),
+			url(images/yellowpaper.jpg);
+		background-size: cover;
+		display: grid;
+		/*padding: 50px 12vw;*/
+		padding: 50px 12vw 5vh 12vw;
+		grid-column-gap: 8vw;
+		grid-template-columns: 4fr 1fr;
+	}
+
+
+.leftcolumn{
+		min-width: 300px;
+		margin-bottom: 5vh;}
+
+
+/*-----------------Aside-------------------------------------------*/
+
+
+.rightcolumn{display: flex;
+		min-width: 19vw;
+		flex-direction: column;
+		}
+
+.card{width: 100%;
+	/*border: 1px solid black;*/
+	margin-bottom: 4vh;
+	border-radius: 10px;
+	background-color: white;
+
+	text-align: center;
+	padding: 10px;
+	}
+
+.card iframe, img{width: 100% }
+
+iframe{border-radius: 10px 10px 0px 0px;}
+
+.firstfriendschurch img{max-height: 120px;
+	max-width: 180px;
+	border-radius: 15px;
+	padding-top: 10px;}
+
+.firstfriendschurch{background: white;
+	text-align: center;
+	font-size: .85em;
+	height: 200px;
+
+}
+
+.ffsign{
+	text-align: center;
+}
+.ffsign img{border-radius: 10px;}
+
+.card{box-shadow: 1px 2px 8px #4E6E5B;
+	
+	transition: all 400ms ease-in-out;}
+
+.card:hover{box-shadow: 5px 8px 18px #000;
+}
+
+
+
+
+.hwp{border-radius: 15px;
+	background-color: #c0c0c0;
+
+	font-size: 1em;
+	text-align: center;
+	color: black;
+	padding-bottom: 15px;
+	}
+.hwp img{border-radius: 8px;}
+
+.AmazonSupport{
+		
+		
+		/*padding-bottom: 65p*/;
+		border-radius: 15px;
+		background-color: #f5cfe6;
+		font-size: 1em;
+		color: black;
+		text-align: center;
+	}
+.facebook-logo{background: white;}
+/*------------------NewsLetter-------------------------*/
+
+.newsletter{width: 100%;
+			height: 1200px;}
+
+
+
+/*-----------------publication table--------------------*/
+
+.content-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.9em;
+	min-width: 400px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, .15);
+}
+.content-table thead tr{
+	background-color: #4E6E5B;
+	color: #f3f1ca;
+	text-align: left;
+	font-weight: 700;
+}
+.content-table th,
+.content-table td{
+	padding: 12px 15px;
+}
+.content-table tr{border: 1px solid #4e6e5b;
+	
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+background-color:#c5cda6;
+
+}
+.content-table tbody tr:nth-of-type(even) {
+background-color: #F2EECB;}
+.content-table tbody tr:last-of-type{
+	border-bottom: 5px solid #4E6E5B;
+}
+
+
+
+/*------------------------------Footer---------------------------*/
+
+.footercontainer{display: flex;
+margin-bottom: 10vh;}
+
+footer{
+		background-color: #4E6E5B;
+		color: #f3f1ca;
+		padding: 10px 100px;
+		display: flex;
+		flex-direction: column;
+	}
+
+footer ul{list-style-type: none;
+		line-height: 1.2;}
+footer a{color: white;}
+
+	.about{
+		flex-grow: 1;
+		flex-basis: 100%;
+	}
+
+	.services{
+		flex-grow: 1;
+		flex-basis: 100%;
+}
+
+	.contact{;
+		flex-grow: 1;
+		flex-basis: 100%;}
+
+footer button{width: 100px;
+			height: 25px;
+			border-radius: 5px;
+			background-color: #f3f1ca;}
+
+footer button:hover{box-shadow: 1px 1px 1px #000;
+			width: 102px;
+			height: 26px;
+			font-size: .75em;}
+
+@media (max-width: 640px) {
+		.navbar ul{
+			flex-wrap: wrap;
+		}
+		.navbar-toggler {
+			display: block;
+		}
+		.navbar-links{
+			display: none;
+			width: 100%;
+			text-align: center;
+		}
+		.active {
+			display: block;
+		}
+		.GridContainer{
+        grid-template-columns: 1fr;
+    }
+    nav img{min-width: 100px;}
+    .footercontainer{flex-direction: column;}
+}
+
+
